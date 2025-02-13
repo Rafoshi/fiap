@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "df3k029yT5cNBFYeVYgcCVeiUGzxZ3TrvuORRfPvtBc=",
+  "Hash": "wWheU5IdOPe4QpYmr9ZKTC9T/ROjsi4/JgC0SA8Q2qc=",
   "Source": "apicsharp",
   "BasePath": "_content/apicsharp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "apicsharp.Controllers.TesteController",
+    "Method": "Criar",
+    "RelativePath": "Teste/Testar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teste",
+        "Type": "apicsharp.Models.Teste",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
