@@ -1,7 +1,12 @@
+using apicsharp.Database.Migrations;
+using apicsharp.Models;
+using FluentMigrator.Runner;
+using LinqToDB;
+using LinqToDB.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -9,17 +14,30 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+var connectionString = "Server=localhost;Port=5432;Database=fiap;User Id=postgres;Password=123;";
+
+var serviceProvider = new ServiceCollection()
+    .AddFluentMigratorCore()
+    .ConfigureRunner(rb => rb
+        .AddPostgres()
+        .WithGlobalConnectionString(connectionString)
+        .ScanIn(typeof(CreateInitialDatabase).Assembly))
+    .AddLogging(lb => lb.AddFluentMigratorConsole())
+    .BuildServiceProvider();
+
+using (var scope = serviceProvider.CreateScope())
+{
+    var runner = scope.ServiceProvider.GetRequiredService<IMigrationRunner>();
+    runner.MigrateUp();
+}
+
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
