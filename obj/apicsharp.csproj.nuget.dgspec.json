@@ -51,13 +51,9 @@
               "target": "Package",
               "version": "[6.2.0, )"
             },
-            "FluentMigrator.Runner.SQLite": {
+            "FluentMigrator.Runner.Postgres": {
               "target": "Package",
               "version": "[6.2.0, )"
-            },
-            "Microsoft.Data.Sqlite": {
-              "target": "Package",
-              "version": "[9.0.2, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
@@ -76,6 +72,10 @@
               "version": "[6.4.0, )"
             },
             "linq2db": {
+              "target": "Package",
+              "version": "[5.4.1, )"
+            },
+            "linq2db.PostgreSQL": {
               "target": "Package",
               "version": "[5.4.1, )"
             }

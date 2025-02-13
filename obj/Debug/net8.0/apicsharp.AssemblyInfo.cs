@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("apicsharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+516e6aab977660d1e2f1b2f96fd10ceb8f9d495b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de91e61318aa9c43a453acb0a08513d1d64f80f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("apicsharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("apicsharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
