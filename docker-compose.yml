@@ -14,7 +14,7 @@ services:
       - db
 
   db:
-    image: postgres:latest 
+    image: postgres:17.2 
     container_name: postgres_db
     environment:
       - POSTGRES_USER=postgres
