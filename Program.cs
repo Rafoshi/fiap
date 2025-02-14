@@ -1,8 +1,8 @@
 using apicsharp.Database.Migrations;
 using apicsharp.Models;
+using apicsharp.Repositories;
+using apicsharp.Services;
 using FluentMigrator.Runner;
-using LinqToDB;
-using LinqToDB.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddSingleton<IRepo, Repo>();
+builder.Services.AddTransient<ITesteService, TesteService>();
+builder.Services.AddTransient<ITesteRepo, TesteRepo>();
 
 var app = builder.Build();
 
@@ -20,7 +21,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-var connectionString = "Server=localhost;Port=5432;Database=fiap;User Id=postgres;Password=123;";
+//var connectionString = "Server=localhost;Port=5432;Database=fiap;User Id=postgres;Password=123;";
+var connectionString = "Server=localhost;Port=5432;Database=fiap;User Id=postgres;Password=rafael04;";
 
 var serviceProvider = new ServiceCollection()
     .AddFluentMigratorCore()

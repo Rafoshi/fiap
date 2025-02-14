@@ -42,7 +42,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -66,29 +66,21 @@
               "target": "Package",
               "version": "[6.0.1, )"
             },
-            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[1.20.1, )"
-            },
-            "MongoDB.Driver": {
-              "target": "Package",
-              "version": "[2.28.0, )"
+              "version": "[9.0.2, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
-            },
-            "linq2db": {
-              "target": "Package",
-              "version": "[5.4.1, )"
-            },
-            "linq2db.PostgreSQL": {
-              "target": "Package",
-              "version": "[5.4.1, )"
             }
           },
           "imports": [

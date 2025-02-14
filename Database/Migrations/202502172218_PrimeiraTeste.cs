@@ -8,7 +8,7 @@ namespace apicsharp.Database.Migrations
     {
         public override void Up()
         {
-            Create.Table("Users")
+            Create.Table("Teste")
                .WithColumn("Id").AsInt32().PrimaryKey().Identity()
                .WithColumn("Nome").AsString().NotNullable().WithDefaultValue("");
         }

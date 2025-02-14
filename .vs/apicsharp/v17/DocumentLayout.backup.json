@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Ioshi\\code\\csharp\\fiap\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF2E13C-3306-4BA9-AFBF-4E057635C753}|apicsharp.csproj|c:\\users\\ioshi\\code\\csharp\\fiap\\repositories\\testerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF2E13C-3306-4BA9-AFBF-4E057635C753}|apicsharp.csproj|solutionrelative:repositories\\testerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF2E13C-3306-4BA9-AFBF-4E057635C753}|apicsharp.csproj|c:\\users\\ioshi\\code\\csharp\\fiap\\services\\testeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF2E13C-3306-4BA9-AFBF-4E057635C753}|apicsharp.csproj|solutionrelative:services\\testeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF2E13C-3306-4BA9-AFBF-4E057635C753}|apicsharp.csproj|c:\\users\\ioshi\\code\\csharp\\fiap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF2E13C-3306-4BA9-AFBF-4E057635C753}|apicsharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF2E13C-3306-4BA9-AFBF-4E057635C753}|apicsharp.csproj|c:\\users\\ioshi\\code\\csharp\\fiap\\controllers\\testecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF2E13C-3306-4BA9-AFBF-4E057635C753}|apicsharp.csproj|solutionrelative:controllers\\testecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +47,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TesteService.cs",
+              "DocumentMoniker": "C:\\Users\\Ioshi\\code\\csharp\\fiap\\Services\\TesteService.cs",
+              "RelativeDocumentMoniker": "Services\\TesteService.cs",
+              "ToolTip": "C:\\Users\\Ioshi\\code\\csharp\\fiap\\Services\\TesteService.cs",
+              "RelativeToolTip": "Services\\TesteService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T01:11:16.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TesteRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Ioshi\\code\\csharp\\fiap\\Repositories\\TesteRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\TesteRepo.cs",
+              "ToolTip": "C:\\Users\\Ioshi\\code\\csharp\\fiap\\Repositories\\TesteRepo.cs",
+              "RelativeToolTip": "Repositories\\TesteRepo.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwCgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T01:08:45.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TesteController.cs",
+              "DocumentMoniker": "C:\\Users\\Ioshi\\code\\csharp\\fiap\\Controllers\\TesteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TesteController.cs",
+              "ToolTip": "C:\\Users\\Ioshi\\code\\csharp\\fiap\\Controllers\\TesteController.cs",
+              "RelativeToolTip": "Controllers\\TesteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:51:18.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ioshi\\code\\csharp\\fiap\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Ioshi\\code\\csharp\\fiap\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAlwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:50:56.829Z",
+              "EditorCaption": ""
             }
           ]
         }

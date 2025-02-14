@@ -5,7 +5,31 @@
     "version": "1.0"
   },
   "paths": {
-    "/Teste/Testar": {
+    "/Teste/GetFirstName": {
+      "get": {
+        "tags": [
+          "Teste"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Teste/GetAll": {
+      "get": {
+        "tags": [
+          "Teste"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Teste/Create": {
       "post": {
         "tags": [
           "Teste"
@@ -35,6 +59,59 @@
           }
         }
       }
+    },
+    "/Teste/Update": {
+      "put": {
+        "tags": [
+          "Teste"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Teste"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Teste"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Teste"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Teste/Delete": {
+      "delete": {
+        "tags": [
+          "Teste"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -42,6 +119,10 @@
       "Teste": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "nome": {
             "type": "string",
             "nullable": true

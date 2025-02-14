@@ -1,12 +1,11 @@
-using LinqToDB.Data;
+using apicsharp.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace apicsharp.Database.Migrations
+namespace apicsharp.Database
 {
-    // public class MyDatabase : DataConnection
-    // {
-    //     public MyDatabase() : base("System.Data.SqlClient", "Server=localhost;Database=TestDB;User Id=sa;Password=your_password;") {
-    //     }
-    //
-    //     // public ITable<Teste> Testes => GetTable<Teste>();
-    // }
+    public class MyDbContext : DbContext
+    {
+        public DbSet<Teste> Teste { get; set; } = null!;
+        protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseNpgsql("Server=localhost;Port=5432;Database=fiap;User Id=postgres;Password=rafael04;");
+    }
 }

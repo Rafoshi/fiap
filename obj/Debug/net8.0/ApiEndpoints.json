@@ -1,9 +1,61 @@
 [
   {
     "ContainingType": "apicsharp.Controllers.TesteController",
-    "Method": "Criar",
-    "RelativePath": "Teste/Testar",
+    "Method": "Create",
+    "RelativePath": "Teste/Create",
     "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teste",
+        "Type": "apicsharp.Models.Teste",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "apicsharp.Controllers.TesteController",
+    "Method": "Delete",
+    "RelativePath": "Teste/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "apicsharp.Controllers.TesteController",
+    "Method": "Create",
+    "RelativePath": "Teste/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "apicsharp.Controllers.TesteController",
+    "Method": "Get",
+    "RelativePath": "Teste/GetFirstName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "apicsharp.Controllers.TesteController",
+    "Method": "Update",
+    "RelativePath": "Teste/Update",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
