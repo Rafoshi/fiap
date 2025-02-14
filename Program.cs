@@ -22,7 +22,7 @@ if (app.Environment.IsDevelopment())
 }
 
 //var connectionString = "Server=localhost;Port=5432;Database=fiap;User Id=postgres;Password=123;";
-var connectionString = "Server=localhost;Port=5432;Database=fiap;User Id=postgres;Password=rafael04;";
+var connectionString = "Host=postgres_db;Port=5432;Username=postgres;Password=123;Database=fiap";
 
 var serviceProvider = new ServiceCollection()
     .AddFluentMigratorCore()
@@ -39,7 +39,6 @@ using (var scope = serviceProvider.CreateScope())
     runner.MigrateUp();
 }
 
-app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
